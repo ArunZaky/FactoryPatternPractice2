@@ -8,11 +8,11 @@ namespace Vehicle
 {
     public abstract class Client
     {
-        public abstract IVehicle GetVehicle(string VehicleType);
+        public abstract Vehicle GetVehicle(string VehicleType);
     }
     public class ConcreteCreatorClient : Client
     {
-        public override IVehicle GetVehicle(string VehicleType)
+        public override Vehicle GetVehicle(string VehicleType)
         {
             switch (VehicleType.ToLower())
             {

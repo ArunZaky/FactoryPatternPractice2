@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace Vehicle
 {
-    public interface IVehicle
+    public abstract class Vehicle
     {
-        void printVehicle();
+        public abstract void printVehicle();
     }
-    public class Bike : IVehicle
+    public class Bike : Vehicle
     {
-        public void printVehicle()
+        public override void printVehicle()
         {
             Console.WriteLine("I am a Two Wheeler");
         }
     }
-    public class Auto : IVehicle
+    public class Auto : Vehicle
     {
-        public void printVehicle()
+        public override void printVehicle()
         {
             Console.WriteLine("I am a Three Wheeler");
         }
     }
-    public class Car : IVehicle
+    public class Car : Vehicle
     {
-        public void printVehicle()
+        public override void printVehicle()
         {
             Console.WriteLine("I am a Three Wheeler");
         }

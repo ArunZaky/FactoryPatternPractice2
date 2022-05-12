@@ -12,17 +12,18 @@ namespace Vehicle
         {
             Client client = new ConcreteCreatorClient();
 
-            IVehicle bike = client.GetVehicle("Bike");
-            IVehicle auto = client.GetVehicle("Auto");
-            IVehicle car = client.GetVehicle("Car");
-            IVehicle newDefault = client.GetVehicle("what");
+            Vehicle bike = client.GetVehicle("Bike");
+            Vehicle auto = client.GetVehicle("Auto");
+            Vehicle car = client.GetVehicle("Car");
+            //Vehicle newDefault = client.GetVehicle("what");
 
 
             bike.printVehicle();
             auto.printVehicle();
             car.printVehicle();
-            newDefault.printVehicle();
+            //newDefault.printVehicle();
 
+            Console.WriteLine("Code ran successfully");
             Console.ReadKey();
         }
     }
